@@ -132,7 +132,7 @@ or
 
 ## Testing
 
-- copy the modified `UnitTestFramework.brs` in [lib/brs/](../master/lib/brs/UnitTestFramework.brs) to your `src/test/source/` folder, so it loads at startup for when testing
+- If you didn't start your project with `ukor init`, copy the modified `UnitTestFramework.brs` in [lib/brs/](../master/lib/brs/UnitTestFramework.brs) to your `src/test/source/` folder, so it loads at startup for when testing
   - original `UnitTestFramework.brs` can be found [here](https://github.com/rokudev/unit-testing-framework) 
 - add the following snippet in your startup function, after `screen.show()` but before the event loop
 ```
@@ -153,8 +153,8 @@ end if
 Basically, we modified the rokudev `UnitTestFramework.brs` file to make a json of test results, and then `POST` that to the specified server. `ukor test <flavor>` builds and deploys the specified flavor with the `test` src folder, and then restarts the channel with parameters to run tests and point the results to the client machine. `ukor` will log the results, and also output results in `xml` and `junit` format to `.out/tests/ukorTests.[xml|junit]`. 
 
 notes: 
-- Ukor does not currently have a command to add `UnitTestFramework.brs` to the project automagically. You'll have to copy it from the repo for now.
-- `UnitTestFramework.brs` is not up to date with ther current rokudev version
+- Ukor now copies `UnitTestFramework.brs` with the `init` command!
+- `UnitTestFramework.brs` ~is not up to date with ther current rokudev version~ is now updated with the rokudev repo!
 
 # Contributing to Ukor
 
