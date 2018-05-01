@@ -1,6 +1,6 @@
 {
-  "name": "ukor",
-  "version": "0.1.0",
+  "name": "@willowtreeapps/ukor",
+  "version": "1.0.2",
   "description": "Roku build tool with flavors and deployment",
   "keywords": [
     "roku",
@@ -17,7 +17,12 @@
   "scripts": {
     "docs": "./build/run-docs.sh"
   },
-  "author": "WillowTree Inc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willowtreeapps/ukor"
+  },
+  "author": "WillowTree Inc.",
+  "publisher": "willowtreeapps",
   "license": "Apache-2.0",
   "bin": {
     "ukor": "bin/ukor.js"
@@ -40,6 +45,7 @@
     "fs-extra": "^3.0.1",
     "grunt": "^1.0.1",
     "grunt-zip": "^0.17.1",
+    "hoek": "^5.0.3",
     "ip": "^1.1.5",
     "js-yaml": "^3.8.4",
     "mkdirp": "^0.5.1",
